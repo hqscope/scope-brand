@@ -1,0 +1,46 @@
+/* Scope brand colors. Keep in sync with tokens.json. */
+:root {
+  /* Core */
+  --scope-red: #C42B26;        /* accent on light; cream on it 5.0:1 */
+  --scope-red-bright: #E5484D; /* accent on dark; on Deep 4.8:1 */
+  --scope-ink: #241E18;        /* text and pills on light; on Cream 14.6:1 */
+  --scope-deep: #14100C;       /* dark backgrounds; Cream on it 16.8:1 */
+  --scope-cream: #F6F1E7;      /* logo on dark, cards, light surfaces */
+  --scope-paper: #FBF7EE;      /* page background */
+
+  /* Warm neutrals */
+  --scope-neutral-dark-1: #211B16;
+  --scope-neutral-dark-2: #2C241F;
+  --scope-neutral-dark-3: #3A302A;
+  --scope-neutral-dark-4: #4A3E34;
+  --scope-text-on-dark: #A6988B;
+  --scope-neutral-light-1: #EDE6D8;
+  --scope-neutral-light-2: #EAE2D4;
+  --scope-neutral-light-3: #E3D9C7;
+  --scope-neutral-light-4: #D6CAB5;
+  --scope-text-on-light: #6B5F55;
+
+  /* Haze, light (5a) */
+  --haze-ground: oklch(0.9 0.045 40);
+  --haze-red: #E5484D;
+  --haze-blue: oklch(0.78 0.09 255);
+  --haze-orange: oklch(0.72 0.17 35);
+  --haze-gold: oklch(0.84 0.12 80);
+  --haze-rose: oklch(0.66 0.19 18);
+  --haze-center: #F6F1E7;
+
+  /* Night haze (5b) */
+  --night-ground: #14100C;
+  --night-red: #E5484D;
+  --night-blue: oklch(0.5 0.1 255);
+  --night-orange: oklch(0.6 0.17 35);
+  --night-gold: oklch(0.68 0.13 70);
+  --night-rose: oklch(0.55 0.19 18);
+
+  /* Family */
+  --lectra-paper: #F3EDE4;     /* Lectra Notes icon tile; the mark uses Scope red and ink */
+  --polya-plum: #5A2147;
+  --polya-blush: #FBEFF5;
+  --polya-rose: #C75B90;
+  --polya-ink: #191F1D;
+}

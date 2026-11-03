@@ -1,0 +1,28 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  body { margin: 0; background: #000; }
+  .ab { position: relative; overflow: hidden; }
+  .ab > .bg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  /* iPad in landscape: bezel, then a 4:3 screen */
+  .ipad { position: absolute; box-sizing: border-box; background: #0B0908;
+          box-shadow: 0 0 0 4px #3A322B, 0 60px 180px rgba(0,0,0,0.6); }
+  .ipad img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: top left; }
+  .side img { filter: brightness(0.82); }
+</style></head>
+<body>
+<!-- Header 21:9 -->
+<div id="header" class="ab" style="width:3840px;height:1646px">
+  <img class="bg" src="../store/app-store/lectra/backgrounds/lectra-appstore-header-night-3840x1646.jpg" alt="">
+  <div class="ipad side" style="width:1240px;left:420px;top:330px;padding:28px;border-radius:64px"><img src="screens/lectra-library.png" style="border-radius:38px" alt=""></div>
+  <div class="ipad side" style="width:1240px;right:420px;top:330px;padding:28px;border-radius:64px"><img src="screens/lectra-code.png" style="border-radius:38px" alt=""></div>
+  <div class="ipad" style="width:1640px;left:1100px;top:160px;padding:36px;border-radius:84px"><img src="screens/lectra-editor.png" style="border-radius:50px" alt=""></div>
+</div>
+<!-- Search results 3:2 -->
+<div id="search" class="ab" style="width:3840px;height:2560px">
+  <img class="bg" src="../store/app-store/lectra/backgrounds/lectra-appstore-search-night-3840x2560.jpg" alt="">
+  <div class="ipad side" style="width:1500px;left:300px;top:760px;padding:34px;border-radius:78px"><img src="screens/lectra-library.png" style="border-radius:46px" alt=""></div>
+  <div class="ipad side" style="width:1500px;right:300px;top:760px;padding:34px;border-radius:78px"><img src="screens/lectra-code.png" style="border-radius:46px" alt=""></div>
+  <div class="ipad" style="width:2000px;left:920px;top:530px;padding:44px;border-radius:102px"><img src="screens/lectra-editor.png" style="border-radius:60px" alt=""></div>
+</div>
+</body></html>
