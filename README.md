@@ -16,6 +16,11 @@ The brand runs on one pair of looks, light and dark, set by LinkedIn banners 5a 
 - **Supporting line.** "Free study tools for every student." in Schibsted Grotesk
   Medium. Set the URL (`canvascope.org`) in Spline Sans Mono.
 
+A third look, **Glow**, is for places where one quiet image beats a message: a wide,
+grainy red glow on Deep with the Ink mark in the middle, and no text. Glow files end
+in `-glow`. Use them for wallpapers, call backgrounds, slide backgrounds, and
+channel art, or as an alternate profile, header, or post image.
+
 ## Folders
 
 | Folder | What's in it |
@@ -28,6 +33,8 @@ The brand runs on one pair of looks, light and dark, set by LinkedIn banners 5a 
 | `social/profile/` | 800 × 800 profile photos: Scope haze (default), Deep, Cream, Red, plus Lectra and Polya |
 | `social/x/` | X header, 1500 × 500 |
 | `social/posts/`, `social/story/` | Post and story templates (1600 × 900, 1080 × 1080, 1080 × 1350, 1080 × 1920) |
+| `social/youtube/` | YouTube channel art, 2560 × 1440 (Glow) |
+| `backgrounds/` | Glow backgrounds: Zoom and Meet 1920 × 1080, desktop wallpaper 2560 × 1600, phone wallpaper 1170 × 2532, slide 1920 × 1080 |
 | `linkedin/` | Banners at 3168 × 792, which is 2× LinkedIn's 1584 × 396: light (5a), dark (5b), and haze (2c), a personal profile banner with a small mark top-right so the profile photo doesn't cover it. Post images at 2×: landscape 2400 × 1254 (for 1200 × 627) and square 2400 × 2400 (for 1200 × 1200). Pair the post images with a plain-text post |
 | `web/link-previews/` | 1200 × 630 share images for canvascope.org, docs.canvascope.org, and askpolya.com |
 | `web/link-preview-background-1200x630.jpg` | Haze with a cream center. scope-web puts each page's title on it for that page's link preview |
@@ -81,6 +88,8 @@ All four are free under the SIL Open Font License.
 - Upload PNGs with no alpha channel, or JPEGs. The Chrome Web Store and App Store
   Connect both reject transparency. `render-all.sh` flattens every image except
   the 128 px store icon.
+- The largest Glow files are the desktop wallpaper (about 4 MB) and the YouTube art
+  (about 3.7 MB). If a site rejects one for size, upload a JPEG copy instead.
 - Keep text out of the App Store header and search results images. The App Store
   crops them differently on every device, and text near the edges gets cut off.
   Keep the focal point centered.

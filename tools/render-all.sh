@@ -30,6 +30,15 @@ $RENDER "Scope Social Kit.dc.html" "$TMP/x2" 2 \
   "$(ab 2a scope-linkedin-post-landscape-2400x1254)" "$(ab 2b scope-linkedin-post-square-2400x2400)" \
   "$(ab 2c scope-linkedin-banner-haze-3168x792)"
 
+# Glow set (3a–3l): already drawn at full size, so 1×.
+$RENDER "Scope Social Kit.dc.html" "$TMP/glow" 1 \
+  "$(ab 3a scope-profile-glow-800)" "$(ab 3b scope-post-glow-1080)" \
+  "$(ab 3c scope-story-glow-1080x1920)" "$(ab 3d scope-x-header-glow-1500x500)" \
+  "$(ab 3e scope-link-preview-glow-1200x630)" "$(ab 3f scope-zoom-background-glow-1920x1080)" \
+  "$(ab 3g scope-wallpaper-desktop-glow-2560x1600)" "$(ab 3h scope-wallpaper-phone-glow-1170x2532)" \
+  "$(ab 3i scope-cws-marquee-glow-1400x560)" "$(ab 3j scope-cws-small-tile-glow-440x280)" \
+  "$(ab 3k scope-youtube-channel-glow-2560x1440)" "$(ab 3l scope-slide-background-glow-1920x1080)"
+
 $RENDER "Scope LinkedIn Kit.dc.html" "$TMP/x2" 2 \
   "$(ab 5a scope-linkedin-banner-light-3168x792)" "$(ab 5b scope-linkedin-banner-dark-3168x792)"
 
@@ -57,5 +66,14 @@ for f in x2/scope-linkedin-banner-{light,dark,haze}-3168x792.png x2/scope-linked
 for f in x1/{canvascope,docs,polya}-link-preview-1200x630.png; do place "$f" web/link-previews; done
 for f in x1/scope-cws-{small-tile-440x280,marquee-1400x560,icon-128}.png; do place "$f" store/chrome-web-store; done
 for f in x1/lectra-appstore-{header-screens-3840x1646,search-screens-3840x2560}.png; do place "$f" store/app-store/lectra; done
+
+place glow/scope-profile-glow-800.png social/profile
+place glow/scope-post-glow-1080.png social/posts
+place glow/scope-story-glow-1080x1920.png social/story
+place glow/scope-x-header-glow-1500x500.png social/x
+place glow/scope-youtube-channel-glow-2560x1440.png social/youtube
+place glow/scope-link-preview-glow-1200x630.png web/link-previews
+for f in glow/scope-cws-{marquee-glow-1400x560,small-tile-glow-440x280}.png; do place "$f" store/chrome-web-store; done
+for f in glow/scope-{zoom-background-glow-1920x1080,wallpaper-desktop-glow-2560x1600,wallpaper-phone-glow-1170x2532,slide-background-glow-1920x1080}.png; do place "$f" backgrounds; done
 
 echo "Done. Check sizes with: magick identify -format '%f %wx%h %[channels]\n' */*.png */*/*.png"
