@@ -35,7 +35,7 @@ channel art, or as an alternate profile, header, or post image.
 | `social/posts/`, `social/story/` | Post and story templates (1600 × 900, 1080 × 1080, 1080 × 1350, 1080 × 1920) |
 | `social/youtube/` | YouTube channel art, 2560 × 1440 (Glow) |
 | `backgrounds/` | Glow backgrounds: Zoom and Meet 1920 × 1080, desktop wallpaper 2560 × 1600, phone wallpaper 1170 × 2532, slide 1920 × 1080 |
-| `linkedin/` | Banners at 3168 × 792, which is 2× LinkedIn's 1584 × 396: light (5a), dark (5b), and haze (2c), a personal profile banner with a small mark top-right so the profile photo doesn't cover it. Post images at 2×: landscape 2400 × 1254 (for 1200 × 627) and square 2400 × 2400 (for 1200 × 1200). Pair the post images with a plain-text post |
+| `linkedin/` | Banners at 3168 × 792, which is 2× LinkedIn's 1584 × 396: light (5a), dark (5b), and haze (2c), a personal profile banner with a small mark top-right so the profile photo doesn't cover it. The "Agentic learning is here" banners come in dark (3a) and light (3b). Post images at 2×: landscape 2400 × 1254 (for 1200 × 627) and square 2400 × 2400 (for 1200 × 1200). Pair the post images with a plain-text post |
 | `web/link-previews/` | 1200 × 630 share images for canvascope.org, docs.canvascope.org, and askpolya.com |
 | `web/link-preview-background-1200x630.jpg` | Haze with a cream center. scope-web puts each page's title on it for that page's link preview |
 | `web/favicon.svg` | Site favicon |
